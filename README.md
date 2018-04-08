@@ -1,5 +1,5 @@
 # Cracking ADFGX
-This project provides python code for cracking an ADFGX cipher with a key length of 8, 9, or 10.
+This project provides python code for cracking an ADFGX cipher with a key length of 8, 9, or 10 (but smaller keys may also be used with some small additions).
 
 ## Code Explanation
 * adfgx.py:
@@ -23,7 +23,7 @@ This project provides python code for cracking an ADFGX cipher with a key length
     The substituted version of the pairs of letters will be printed out in a single string to the console that can then be analyzed like a monoalphabetic cipher.
 
 ## Steps for Cracking the Cipher
-You can use either of the ADFGX python files to find the possible transposition orderings, but it your computer can stand it, the `v2_adfgx.py` file is better.
+You can use either of the ADFGX python files to find the possible transposition orderings, but if your computer can stand it, the `v2_adfgx.py` file is better.
 
 1. Use this [tool](http://rumkin.com/tools/cipher/manipulate.php) to change the ciphertext to uppercase and remove all spaces and newlines. The tool will tell you how many uppercase letters there are, so find the factors of that number to select a key length.
 
